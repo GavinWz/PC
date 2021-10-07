@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED82B773-9297-449D-8643-03246772C108}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PC_Manager_Form</RootNamespace>
+    <AssemblyName>PC_Manager_Form</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl1.Designer.cs">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PC_ManagerDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PC_ManagerDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proposal.Designer.cs">
+      <DependentUpon>Proposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffParent.Designer.cs">
+      <DependentUpon>StaffParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserOrder.Designer.cs">
+      <DependentUpon>UserOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wonder.Designer.cs">
+      <DependentUpon>Wonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserParent.Designer.cs">
+      <DependentUpon>UserParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proposal.resx">
+      <DependentUpon>Proposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffParent.resx">
+      <DependentUpon>StaffParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserOrder.resx">
+      <DependentUpon>UserOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserParent.resx">
+      <DependentUpon>UserParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Wonder.resx">
+      <DependentUpon>Wonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet1.xsc">
+      <DependentUpon>PC_ManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet1.xss">
+      <DependentUpon>PC_ManagerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet10.xsc">
+      <DependentUpon>PC_ManagerDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet10.xss">
+      <DependentUpon>PC_ManagerDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet11.xsc">
+      <DependentUpon>PC_ManagerDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet11.xss">
+      <DependentUpon>PC_ManagerDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet111.xsc">
+      <DependentUpon>PC_ManagerDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet111.xss">
+      <DependentUpon>PC_ManagerDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet12.xsc">
+      <DependentUpon>PC_ManagerDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet12.xss">
+      <DependentUpon>PC_ManagerDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet13.xsc">
+      <DependentUpon>PC_ManagerDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet13.xss">
+      <DependentUpon>PC_ManagerDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet14.xsc">
+      <DependentUpon>PC_ManagerDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet14.xss">
+      <DependentUpon>PC_ManagerDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet15.xsc">
+      <DependentUpon>PC_ManagerDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet15.xss">
+      <DependentUpon>PC_ManagerDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet16.xsc">
+      <DependentUpon>PC_ManagerDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet16.xss">
+      <DependentUpon>PC_ManagerDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet2.xsc">
+      <DependentUpon>PC_ManagerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet2.xss">
+      <DependentUpon>PC_ManagerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet31.xsc">
+      <DependentUpon>PC_ManagerDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet31.xss">
+      <DependentUpon>PC_ManagerDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet4.xsc">
+      <DependentUpon>PC_ManagerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet4.xss">
+      <DependentUpon>PC_ManagerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet5.xsc">
+      <DependentUpon>PC_ManagerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet5.xss">
+      <DependentUpon>PC_ManagerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet6.xsc">
+      <DependentUpon>PC_ManagerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet6.xss">
+      <DependentUpon>PC_ManagerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet7.xsc">
+      <DependentUpon>PC_ManagerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet7.xss">
+      <DependentUpon>PC_ManagerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet8.xsc">
+      <DependentUpon>PC_ManagerDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet8.xss">
+      <DependentUpon>PC_ManagerDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet9.xsc">
+      <DependentUpon>PC_ManagerDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="PC_ManagerDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PC_ManagerDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PC_ManagerDataSet9.xss">
+      <DependentUpon>PC_ManagerDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AMDRyzen32200GE.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

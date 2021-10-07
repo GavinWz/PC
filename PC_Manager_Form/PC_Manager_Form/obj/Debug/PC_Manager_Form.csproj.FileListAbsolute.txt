@@ -1,0 +1,17 @@
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\bin\Debug\PC_Manager_Form.exe.config
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\bin\Debug\PC_Manager_Form.exe
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\bin\Debug\PC_Manager_Form.pdb
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.csproj.AssemblyReference.cache
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.Properties.Resources.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.csproj.GenerateResource.cache
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.csproj.CoreCompileInputs.cache
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.exe
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.pdb
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.UserParent.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.UserOrder.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.Wonder.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.Login.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.StaffParent.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.Store.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.Proposal.resources
+C:\Users\Gavin\source\repos\PC_Manager_Form\PC_Manager_Form\obj\Debug\PC_Manager_Form.Order.resources
